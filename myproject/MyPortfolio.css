@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Mali:wght@200&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --bg-color: rgb(255, 255, 255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'mail',sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* -------------------------navbar---------------------- */
+
+.mynav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    padding: 16px;
+    border-bottom: 2px solid #eaeaea;
+    height: 98px;
+    position: static;
+}
+
+.mynav .logo{
+    margin: 16px;
+    padding: 10px 10px 10px 25px;
+    margin: 10px;
+    
+}
+
+.mynav .logo a{
+    text-decoration: none;
+    color: black;
+    font-size: 36px;
+    /* padding: 10px; */
+    
+    transition: all 0.2s ease;
+}
+
+.mynav .logo a:hover {
+    color: black;
+    font-size: 38px;
+    font-weight: 600;
+    border:none ;
+    border-bottom:2px solid rgba(3,43,94,255);
+}
+
+.mynav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+}
+
+.mynav ul li{
+    padding: 25px;
+    font-size: 25px;
+    
+}
+
+.mynav ul li a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease;
+}
+
+.mynav ul li a:hover{
+    color: black;
+    font-size: 29px;
+    font-weight: 600;
+    border:none ;
+    border-bottom:2px solid rgba(3,43,94,255);
+}
+.container1 {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    font-size: 2rem;
+    background-color: u;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+/* --------------------------Home-------------------------- */
+
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+    background: rgb(211, 229, 254);
+    border-bottom: 2px solid #eaeaea;
+}
+
+.home .info{
+    margin: 5rem 8rem;
+    letter-spacing: 2px;
+    padding: 5rem;
+}
+
+.home .info h1{
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.home .info p {
+    margin:1rem 0rem;
+    font-size: 25px;
+    line-height: 1.2;
+}
+.home .info p span{
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.home .info a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    margin: 5rem 0rem;
+    
+    
+}
+
+.home .info a span{
+    color: #fff;
+    border: 1px solid black;
+    background: black;
+    padding: 20px;
+    margin-top: 2rem;
+    border-radius: 20%;
+    cursor: pointer !important;
+    transition: background 0.2s ease;
+}
+
+.home .info a span:hover{
+    background: rgba(37,145,184,255);
+    border: 1px solid transparent;
+}
+
+.home .my-img1{
+    padding: 5rem;
+    margin: 0 10rem;
+}
+
+.home .my-img1 img{
+    border-radius: 50%;
+}
+
+/* ---------------------about me---------------------- */
+
+.about-me{
+    
+    display: grid;
+    align-items: start;
+    justify-content: center;
+    background: #E8DFCA;
+    border-bottom: 2px solid #eaeaea;
+}
+
+.about-me h1{
+    margin: 3rem;
+    padding: 2rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
+
+}
+
+
+.row-img-about-me{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-img{
+    padding: 2rem;
+    margin: 7rem 10rem;
+}
+
+.my-img .myself{
+    border-radius: 50%;
+    width: 450px;
+    
+}
+
+.myabout{
+    margin: 2rem 5rem;
+    letter-spacing: 2px;
+    padding: 1rem 5rem;
+    font-size: x-large;
+    
+}
+
+/* ------------skills-------------- */
+
+.skillsall{
+    display: grid;
+    align-items: center;
+    justify-content: start;
+    padding: 4rem;
+    /* margin: 3rem; */
+    background: #FCFFE0;
+}
+
+.skillsall h1{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+.skillsall .my-skills{
+    width: 650px;
+    font-size: 1.5rem;
+}
+
+.skillsall .my-skills p{
+    margin: 1rem 0rem;
+}
+
+.container {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+    border-radius: 2rem;
+  }
+  
+  .skills {
+    text-align: center; /* Right-align text */
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    color: white; /* White text color */
+  }
+  
+  .html {
+    width: 90%; background-color: #04AA6D;
+    border-radius: 2rem;
+    
+} /* Green */
+  .css {
+    width: 80%; background-color: #2196F3;
+    border-radius: 2rem;
+    
+} /* Blue */
+  .js {
+    width: 65%; background-color: #f44336;
+    border-radius: 2rem;
+    
+} 
+
+/* -------------contact-------------- */
+
+.contact{
+    padding: 2rem;
+    text-align: center;
+    background: #151515;
+    color: #fff;
+}
+
+.contact h1{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.contact p {
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1200px) {
+    .mynav{
+        padding: 2rem;
+    }
+    .mynav .logo a {
+        font-size: 30px;
+    }
+    .mynav ul li{
+        padding: 15px;
+    font-size: 20px;
+    }
+    .home .info {
+        margin: 4rem 4rem;
+        letter-spacing: 2px;
+        padding: 3rem;
+    }
+    .home .info h1 {
+        font-size: 2em;
+    }
+    .home .info p{
+        margin: 0rem;
+        font-size: 20px;
+    }
+    .home .my-img1{
+        padding: 4rem;
+    margin: 0 8rem;
+    }
+
+    .about-me h1{
+        padding: 2rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    }
+    .my-img{
+        padding: 2rem;
+    margin: 5rem 1rem;
+    }
+
+    .myabout{
+        margin: 2rem 5rem;
+    letter-spacing: 2px;
+    padding: 1rem 5rem;
+    font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .mynav{
+        padding: 1.5rem;
+    }
+    .mynav .logo a {
+        font-size: 25px;
+    }
+    .mynav ul li{
+        padding: 15px;
+    font-size: 15px;
+    }
+    .home .info {
+        margin: 3rem 3rem;
+        letter-spacing: 2px;
+        padding: 3rem;
+    }
+    .home .info h1 {
+        font-size: 2em;
+    }
+    .home .info p{
+        margin: 0rem;
+        font-size: 18px;
+    }
+    .home .my-img1{
+        padding: 3rem;
+    margin: 0 6rem;
+    }
+
+    .about-me h1{
+        padding: 2rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-align: center;
+    }
+    .my-img{
+        display: none;
+        padding: 2rem;
+    margin: 2rem 1rem;
+    content: \;
+    }
+
+    .myabout{
+        margin: 5rem 3rem;
+    letter-spacing: 2px;
+    padding: 1rem 5rem;
+    font-size: 16px;
+    text-align: center;
+    }
+}
+@media screen and (max-width: 760px) {
+    .mynav ul {
+        display: none;
+        background: linear-gradient();
+    }
+
+    .container1{
+        display: inline-block;
+        margin: 0rem 3rem;
+        max-width:
+        
+    }
+
+    .home .my-img1{
+        display:inline-block
+        
+    }
+}
+
+
